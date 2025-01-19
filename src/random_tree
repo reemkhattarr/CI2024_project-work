@@ -1,21 +1,23 @@
 digraph {
-	Node0 [label=mul]
-	Node1 [label=sin]
+	Node0 [label=tan]
+	Node1 [label=sub]
 	Node0 -> Node1
-	Node2 [label=cos]
+	Node2 [label=mul]
 	Node1 -> Node2
 	Node3 [label=x1]
 	Node2 -> Node3
-	Node2 [label=cos]
-	Node0 -> Node2
-	Node3 [label=sqrt]
-	Node2 -> Node3
-	Node4 [label=sin]
-	Node3 -> Node4
-	Node5 [label=div]
+	Node4 [label=sqrt]
+	Node2 -> Node4
+	Node5 [label=mul]
 	Node4 -> Node5
-	Node6 [label=x0]
+	Node6 [label=x3]
 	Node5 -> Node6
 	Node7 [label=x0]
 	Node5 -> Node7
+	Node3 [label=sub]
+	Node1 -> Node3
+	Node4 [label=x1]
+	Node3 -> Node4
+	Node5 [label=8.538461538461538]
+	Node3 -> Node5
 }
