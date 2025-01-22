@@ -13,11 +13,11 @@ def f0(x: np.ndarray) -> np.ndarray:
     return x[0] + np.sin(x[1]) / 5
 
 
-def f1(x: np.ndarray) -> np.ndarray: ...
+def f1(x: np.ndarray) -> np.ndarray:
+    return np.sin(x[0])
 
-
-def f2(x: np.ndarray) -> np.ndarray: ...
-
+def f2(x: np.ndarray) -> np.ndarray:
+    return ((x[0] - 0.75024 + -0.12047) * np.square(330.89 - (-0.86566 / x[0]) - (x[0] - np.square(x[1])) - (x[1] * x[2]))) / 0.086551
 
 def f3(x: np.ndarray) -> np.ndarray: ...
 
